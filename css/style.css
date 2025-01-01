@@ -1,0 +1,207 @@
+ body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    height: 100%;
+}
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10%;
+    color: white;
+    font-size: 1rem;
+    opacity: 0.8;
+    animation: fall infinite linear, sway infinite ease-in-out;
+}
+
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Rockwell Extra Bold", serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 20;
+}
+
+/* Header Section */
+.links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.links a {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Rockwell, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.links a:hover {
+    color: gold;
+    background-color: rgb(125, 125, 125);
+}
+
+/* Categories Section */
+.Categories, .Products, .Discounts, .Blogs {
+    font-family: "Rockwell Extra Bold";
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Cards Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 52px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.cards {
+    border: 1px solid black;
+    width: 20%;
+    background-color: lightgreen;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+}
+
+/* Blogs Section */
+.Blogs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.Blogs-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.Blogs-Photo {
+    width: 80% ;
+    border: 1px solid black;
+    background-color: lightgreen;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.Blogs-h1{
+    font-family: Rockwell Extra Bold;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.49px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+/* Footer Section */
+.Footer {
+    margin: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Blogs-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cards {
+        width: 45%;
+    }
+
+    .Blogs-Photo {
+        max-width: 100%;
+    }
+
+    .Blogs-item {
+        width: calc(100% - 20px); 
+    }
+    .Blogs-container {
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        width: 90%;
+    }
+
+    .Blogs-Photo {
+        max-width: 90%;
+    }
+
+    .Blogs-container {
+        flex-direction: column; 
+        gap: 20px;
+    }
+    .Blogs-item {
+        width: 100%;
+    }
+}
