@@ -136,6 +136,8 @@
     transform: scale(1.5);
 }
 
+
+
 /* Header Section */
 .links {
     position: fixed;
@@ -173,6 +175,17 @@
     color: green;
 }
 
+.links h1{
+    color: green;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Rockwell, serif;
+    font-size: 20px;
+    text-align: center;
+}
 /* Categories Section */
 .Categories, .Products, .Discounts, .Blogs {
     font-family: "Rockwell Extra Bold";
