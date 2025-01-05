@@ -3,6 +3,7 @@
     padding: 0;
     background: linear-gradient(to bottom, #001f3f, #003a6c);
     height: 100%;
+    align-items: center;
 }
 
 .snowflakes {
@@ -219,8 +220,10 @@
 .cards {
     border: 1px solid black;
     width: 20%;
+    max-height: 5%;
     background-color: rgba(59, 248, 157, 0.5);
-    text-align: left;
+    text-align:left;
+    align-items: center;
     padding: 10px;
     box-sizing: border-box;
     
@@ -237,7 +240,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 23.49px;
-    text-align: left;
+    text-align: bottom;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
@@ -262,11 +265,21 @@
     text-decoration-skip-ink: none;    
     padding: 16px 7px 16px 7px;
     gap: 10px;
-    float: right top;
+    float: left bottom;
 
 }
 
+.cards a {
+    color: #1c1212;
+    text-decoration: none;
+    font-size:19px;
+    
+}
 
+.cards a:hover {
+    color: #000000;
+    transform: scale(1.3); 
+}
 /* Blogs Section */
 .Blogs-container {
     display: flex;
@@ -290,7 +303,7 @@
 .Blogs-Photo {
     width: 80% ;
     border: 1px solid black;
-    background-color: lightgreen;
+    background-color: rgba(59, 248, 157, 0.5);
     padding: 5px;
     margin-bottom: 10px;
 }
@@ -359,6 +372,65 @@
 }
 
 .Footer-links a:hover {
+    color: #000000;
+    transform: scale(1.1); 
+}
+/*products page*/
+.product-container{
+    border: 1px solid black;
+    width: 60%;
+    height: 80%;
+    background-color: rgba(59, 248, 157, 0.5);
+    text-align:center;
+    align-items:left;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.product-container h1{font-family: Rockwell Extra Bold;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28.18px;
+    text-align:center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 0px;
+    
+    }
+
+.product-container p{
+    font-family: Rockwell;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.49px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: inline;
+    display: block !important;
+    margin-top: 10px;
+
+}
+
+.product-container img{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.product-container a {
+    color: #1c1212;
+    text-decoration: none;
+    font-size:19px;
+    
+}
+
+.product-container a:hover {
     color: #000000;
     transform: scale(1.1); 
 }
