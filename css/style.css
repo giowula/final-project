@@ -343,6 +343,7 @@
 
 }
 
+<<<<<<< HEAD
 .Blogs-item p{
     font-family: Rockwell;
     font-size: 20px;
@@ -357,6 +358,8 @@
     margin-bottom: 10px;
 }
 
+=======
+>>>>>>> 2da0b7353575719607bbd27f7e52ae5c9248d36d
 .Blogs-item1 {
     display: flex;
     flex-direction: column; 
