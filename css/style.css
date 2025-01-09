@@ -6,6 +6,9 @@
     align-items: center;
 }
 
+header {
+    z-index: 1000000;
+}
 .snowflakes {
     position: fixed;
     top: 0; 
@@ -13,7 +16,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-../index: 10;
+    z-index: 10;
 }
 
 .snowflake {
@@ -129,7 +132,7 @@
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     text-align: center;
-    z-../index: 20;
+    z-index: 20;
 }
 
 .Header-title h1:hover {
@@ -174,7 +177,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    z-../index: 1000;
+    z-index: 1000;
 }
 
 .links a {
@@ -343,7 +346,7 @@
 
 }
 
-<<<<<<< HEAD
+
 .Blogs-item p{
     font-family: Rockwell;
     font-size: 20px;
@@ -358,8 +361,6 @@
     margin-bottom: 10px;
 }
 
-=======
->>>>>>> 2da0b7353575719607bbd27f7e52ae5c9248d36d
 .Blogs-item1 {
     display: flex;
     flex-direction: column; 
