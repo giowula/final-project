@@ -6,9 +6,6 @@
     align-items: center;
 }
 
-header {
-    z-index: 1000000;
-}
 .snowflakes {
     position: fixed;
     top: 0; 
@@ -177,7 +174,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 1;
 }
 
 .links a {
