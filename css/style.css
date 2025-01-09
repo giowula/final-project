@@ -216,6 +216,7 @@
 .Categories, .Products, .Discounts, .Blogs {
     font-family: "Rockwell Extra Bold";
     font-size: 48px;
+    color: #141414;
     font-weight: 800;
     text-align: center;
     margin: 20px 0;
@@ -341,6 +342,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #141414;
 
 }
 
@@ -357,6 +359,7 @@
     display: block !important;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #141414;
 }
 
 .Blogs-item1 {
